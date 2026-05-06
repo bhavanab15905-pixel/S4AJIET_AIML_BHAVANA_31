@@ -1,0 +1,20 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        String s1 = "listen";
+        String s2 = "silent";
+
+        char[] a = s1.toCharArray();
+        char[] b = s2.toCharArray();
+
+        java.util.Arrays.sort(a);
+        java.util.Arrays.sort(b);
+
+        if (java.util.Arrays.equals(a, b)) {
+            System.out.println("Valid Anagram");
+        } else {
+            System.out.println("Not Anagram");
+        }
+    }
+}
